@@ -12,7 +12,7 @@ spring:
         registration:
           keycloak:
             authorization-grant-type: client_credentials
-            client-id: toll-service
+            client-id: stock-service
             client-secret: X27eyfOyBUT6s4ajJvcQ4GDS6TzQuBRZ
             scope: reader
 logging:
