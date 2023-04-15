@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+#  main:
+#    allow-circular-references: true
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            token-uri: http://localhost:8085/realms/sensex/protocol/openid-connect/token
+        registration:
+          keycloak:
+            authorization-grant-type: client_credentials
+            client-id: toll-service
+            client-secret: X27eyfOyBUT6s4ajJvcQ4GDS6TzQuBRZ
+            scope: reader
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
